@@ -37,7 +37,7 @@ public class LambdaExample {
             }
         };*/
 
-        UpperConcat uc = (s1, s2) -> s1 + " " + s2;
+        UpperConcat uc = (s1, s2) -> s1.toUpperCase() + " " + s2.toUpperCase();
 
         System.out.println(uc.upperAndConcat(employeeList.get(0).getName(), employeeList.get(1).getName()));
     }
